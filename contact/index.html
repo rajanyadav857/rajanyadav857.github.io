@@ -25,12 +25,24 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
 <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <script>
+	  var form = document.querySelector('.pageclip-form')
+Pageclip.form(form, {
+  onSubmit: function (event) { },
+  onResponse: function (error, response) { },
+  successTemplate: '<span>Thank you!</span>'
+})
+  </script>
+
 </head>
 <body>
 
 
 	<div class="container-contact100">
-		<div class="contact100-map" id="google_map" data-map-x="40.722047" data-map-y="-73.986422" data-pin="images/icons/map-marker.png" data-scrollwhell="0" data-draggable="1"></div>
 
 		<div class="wrap-contact100">
 			<form action="https://send.pageclip.co/tTCIqVnTNDUaTPqpUP4fcb9Hz9nCUFcL/contact-form" class="contact100-form validate-form" class="pageclip-form" method="post">
@@ -54,9 +66,10 @@
 				</div>
 
 				<div class="container-contact100-form-btn">
-					<button type="submit" class="contact100-form-btn">
+					<button  class="contact100-form-btn pageclip-form__submit">
 						Send Email
 					</button>
+					
 				</div>
 			</form>
 
@@ -64,6 +77,7 @@
 	</div>
 
 
+	
 
     <div id="dropDownSelect1"></div>
     <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
